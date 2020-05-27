@@ -6,14 +6,12 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
 public class ShaUtils {
-	public static String calcolaHash(String precHash, long timeStamp, int nonce)
+	public static String calcolaHash(String strHash)
 	{
-		String strHash = precHash + timeStamp + nonce + "";
 		String codificata = null;
 		
 		MessageDigest digest;
-		
-		
+				
 		try {
 			digest = MessageDigest.getInstance("SHA-256");
 			byte[] arrayBytes = digest.digest(strHash.getBytes(StandardCharsets.UTF_8));
