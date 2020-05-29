@@ -7,7 +7,7 @@ public class Blocco {
 	private String thisHash;
 	private String precHash;
 	private String merkleRadice;
-	private String nonce;
+	private int nonce;
 	private ArrayList<Transazione> listaTx = new ArrayList<Transazione>();
 	
 	public long getTimestamp() {
@@ -34,11 +34,11 @@ public class Blocco {
 		this.precHash = precHash;
 	}
 	
-	public String getNonce() {
+	public int getNonce() {
 		return nonce;
 	}
 	
-	public void setNonce(String nonce) {
+	public void setNonce(int nonce) {
 		this.nonce = nonce;
 	}
 	
