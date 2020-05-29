@@ -1,6 +1,7 @@
 package mined.blockchain;
 
 public class Transazione {
+	
 	int id;
 
 	public Transazione(int id) {
